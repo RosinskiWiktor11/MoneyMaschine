@@ -1,0 +1,1 @@
+﻿update gpw_company set shortname= '--' from (select id from gpw_company  where shortname IS NULL) as subquery where gpw_company.id=subquery.id

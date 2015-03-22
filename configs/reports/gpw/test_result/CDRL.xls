@@ -1,0 +1,13 @@
+MACDsimple;5;7;14;MACDsimple;5;7;14;0;2;0;3086.45
+MACDsimple;7;17;10;MACDsimple;7;17;10;1;0;1;3602.60
+MACDsimple;9;15;9;MACDsimple;9;15;9;0;1;0;3479.00
+MACDsimple;5;7;7;MACDsimple;5;7;7;1;4;0.2;3397.55
+MACDsimple;6;9;11;MACDsimple;6;9;11;0;1;0;3267.83
+MACDsimple;5;12;17;MACDsimple;5;12;17;0;1;0;3292.00
+MACDsimple;5;8;28;MACDsimple;5;8;28;1;0;1;3602.60
+MACDsimple;5;9;20;MACDsimple;5;9;20;0;1;0;3471.53
+TwoAverages;15;22;TwoAverages;15;22;0;1;0;3196.20
+MACDsimple;5;11;19;MACDsimple;5;11;19;0;1;0;3292.00
+MACDsimple;12;18;4;TwoAverages;19;41;0;1;0;3292.00
+MACDsimple;5;8;22;MACDsimple;5;8;22;0;1;0;3471.53
+MACDsimple;5;7;5;MACDsimple;5;7;5;0;5;0;3191.34

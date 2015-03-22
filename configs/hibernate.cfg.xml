@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+
+        <!-- Database connection settings -->
+        
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost/testMashineMoney</property> 
+
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">capo11</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+		<property name="cache.use_second_level_cache">false</property>
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+      
+        <!-- Drop and re-create the database on startup -->
+        <property name="hbm2ddl.auto"> update </property>
+        
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+       
+        <property name="hibernate.jdbc.batch_size">0</property>
+      
+        <mapping class="com.victor.entity.Activity"/>
+      	<mapping class="com.victor.entity.CapitalValue"/>
+      	<mapping class="com.victor.entity.Currency"/>
+      	<mapping class="com.victor.entity.Customer"/>
+      	<mapping class="com.victor.entity.CustomerPortfolio"/>
+      	<mapping class="com.victor.entity.FundActivity"/>
+      	<mapping class="com.victor.entity.FundValue"/>
+      	<mapping class="com.victor.entity.InvestmentFund"/>
+      	<mapping class="com.victor.entity.Payment"/>
+      	<mapping class="com.victor.entity.Portfolio"/>
+      	<mapping class="com.victor.entity.PortfolioFund"/>
+      	<mapping class="com.victor.entity.SkandiaAlgorithm"/>
+      	
+      	<mapping class="com.victor.entity.Quotation"/>
+      	<mapping class="com.victor.entity.GpwCompany"/>
+      	<mapping class="com.victor.entity.GpwTransaction"/>
+      	<mapping class="com.victor.entity.CustomerGpwTransaction"/>
+      	<mapping class="com.victor.entity.GpwAlgorithm"/>
+      	
+      	
+<!--       	<mapping class="com.victor.entity."/> -->
+      	
+
+        
+    </session-factory>
+
+</hibernate-configuration>
